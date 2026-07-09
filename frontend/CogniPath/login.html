@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - CogniPath</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <main class="login-screen">
+    <form class="login-card glass" data-login-form>
+      <a class="login-brand" href="index.html" aria-label="CogniPath home">
+        <span class="brand-mark">C</span>
+        <span>CogniPath</span>
+      </a>
+
+      <div class="login-heading">
+        <h1>Sign In</h1>
+        <p>Welcome back! Please sign in to your account.</p>
+      </div>
+
+      <div class="field">
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      </div>
+
+      <div class="field">
+        <div class="label-row">
+          <label for="login-password">Password</label>
+          <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+        <div class="password-field">
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password">
+          <button class="password-toggle" type="button" data-toggle-password aria-label="Show password">Show</button>
+        </div>
+      </div>
+
+      <label class="remember-row">
+        <input name="remember" type="checkbox" checked>
+        <span>Remember Me</span>
+      </label>
+
+      <p class="error" role="alert"></p>
+
+      <button class="btn primary login-submit" type="submit">Sign In</button>
+
+      <div class="auth-divider"><span>OR</span></div>
+
+      <button class="google-btn" type="button" data-google-login>
+        <span aria-hidden="true">G</span>
+        Continue with Google
+      </button>
+
+      <p class="auth-switch">Don't have an account? <a href="register.html">Create Account</a></p>
+    </form>
+  </main>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

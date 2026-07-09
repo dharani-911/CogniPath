@@ -1,0 +1,230 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+.auth-card {
+  width: min(960px, 100%);
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  overflow: hidden;
+}
+.auth-art {
+  padding: 36px;
+  background:
+    linear-gradient(135deg, rgba(139,92,246,.28), rgba(34,211,238,.1)),
+    rgba(255,255,255,.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 620px;
+}
+.auth-art h1 { font-size: 46px; }
+.auth-art p { color: var(--soft); line-height: 1.7; }
+.auth-form { padding: 36px; }
+.auth-form h2 { font-size: 34px; }
+.password-meter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 8px;
+}
+.password-meter i {
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(255,255,255,.12);
+}
+.password-meter[data-score="1"] i:nth-child(-n+1) { background: var(--red); }
+.password-meter[data-score="2"] i:nth-child(-n+2) { background: var(--amber); }
+.password-meter[data-score="3"] i:nth-child(-n+3) { background: var(--cyan); }
+.password-meter[data-score="4"] i:nth-child(-n+4) { background: var(--green); }
+@media (max-width: 820px) {
+  .auth-card { grid-template-columns: 1fr; }
+  .auth-art { min-height: auto; }
+}
+
+.login-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(139, 92, 246, .22), transparent 34%),
+    radial-gradient(circle at 15% 100%, rgba(34, 211, 238, .12), transparent 28%),
+    linear-gradient(145deg, #060713 0%, #111429 56%, #070814 100%);
+}
+
+.login-card {
+  width: min(430px, 100%);
+  padding: 32px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .105), rgba(255, 255, 255, .052));
+  box-shadow: 0 28px 90px rgba(0, 0, 0, .48);
+}
+
+.login-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 850;
+  letter-spacing: -.03em;
+  margin-bottom: 30px;
+}
+
+.login-heading {
+  margin-bottom: 26px;
+}
+
+.login-heading h1 {
+  font-size: 31px;
+  line-height: 1.1;
+  letter-spacing: -.035em;
+  margin-bottom: 8px;
+}
+
+.login-heading p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+.label-row,
+.remember-row {
+  display: flex;
+  align-items: center;
+}
+
+.label-row {
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.label-row a,
+.auth-switch a {
+  color: #c4b5fd;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.label-row a:hover,
+.auth-switch a:hover {
+  color: #ffffff;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 70px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--soft);
+  background: rgba(255, 255, 255, .08);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.password-toggle:hover {
+  background: rgba(255, 255, 255, .14);
+}
+
+.remember-row {
+  gap: 9px;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 0 12px;
+  width: fit-content;
+}
+
+.remember-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--purple);
+}
+
+.login-submit,
+.google-btn {
+  width: 100%;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin: 20px 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+
+.google-btn {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  background: rgba(255, 255, 255, .07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 800;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.google-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, .115);
+  border-color: rgba(255, 255, 255, .22);
+}
+
+.google-btn span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.auth-switch {
+  margin: 22px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 520px) {
+  .login-screen {
+    padding: 16px;
+  }
+
+  .login-card {
+    padding: 24px;
+  }
+}
