@@ -1,0 +1,25 @@
+.kpi { display: grid; gap: 10px; min-height: 138px; }
+.kpi .label { color: var(--muted); font-size: 13px; font-weight: 800; }
+.kpi .value { font-size: 34px; font-weight: 900; letter-spacing: -.04em; }
+.kpi .delta { color: #bbf7d0; font-size: 13px; }
+.quick-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.drop-zone {
+  border: 1px dashed rgba(255,255,255,.28);
+  background: rgba(255,255,255,.05);
+  border-radius: 8px;
+  padding: 22px;
+  text-align: center;
+}
+.drop-zone.drag { border-color: var(--cyan); background: rgba(34,211,238,.1); }
+.keyword-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.keyword-list span {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.07);
+  font-weight: 800;
+  font-size: 13px;
+}
+.activity { display: grid; gap: 12px; }
+.activity li { list-style: none; display: flex; gap: 10px; color: var(--muted); }
+.activity b { color: var(--text); }
