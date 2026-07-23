@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CogniPath - AI-Powered Career Intelligence Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">C</span><span>CogniPath<small>AI Career Intelligence</small></span></a>
+      <nav class="nav-links">
+        <a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="btn" href="login.html">Sign in</a><a class="btn primary" href="register.html">Start demo</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <span class="eyebrow">Infosys Springboard Virtual Internship Project</span>
+          <h1>AI-powered career guidance for smarter growth decisions.</h1>
+          <p class="lead">CogniPath analyzes resumes, identifies skill gaps, recommends career paths, suggests learning resources, predicts salary ranges, and visualizes personalized career insights.</p>
+          <div class="nav-actions"><a class="btn primary" href="register.html">Create account</a><a class="btn" href="dashboard.html">Open dashboard</a></div>
+        </div>
+        <div class="hero-panel glass">
+          <div class="mini-dashboard">
+            <div class="metric-row">
+              <div class="metric"><b>86%</b><span>Readiness</span></div>
+              <div class="metric"><b>1.2k</b><span>Resumes analyzed</span></div>
+              <div class="metric"><b>94%</b><span>Match confidence</span></div>
+            </div>
+            <div class="sentiment-orb"><div>Career<br>Insights</div></div>
+            <div class="review-stream">
+              <div class="review-chip"><span>Python, SQL, analytics, dashboard projects</span><span class="badge positive">Strong Fit</span></div>
+              <div class="review-chip"><span>Cloud deployment and security missing</span><span class="badge negative">Skill Gap</span></div>
+              <div class="review-chip"><span>Product strategy experience developing</span><span class="badge neutral">Developing</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section-head"><div><span class="eyebrow">Platform Modules</span><h2>Everything needed for AI career intelligence.</h2></div><p>No placeholder screens: authentication, profile, resume analysis, skill-gap insights, career analytics, reports, admin, settings, and contact workflows are included.</p></div>
+        <div class="grid four">
+          <article class="glass card feature"><div class="symbol">AI</div><h3>Resume Analysis</h3><p class="muted">Extracts skills, strengths, and development areas from resume inputs.</p></article>
+          <article class="glass card feature"><div class="symbol">SG</div><h3>Skill Gaps</h3><p class="muted">Highlights missing capabilities from resume and skill inputs.</p></article>
+          <article class="glass card feature"><div class="symbol">CP</div><h3>Career Paths</h3><p class="muted">Recommends suitable paths, learning resources, and growth milestones.</p></article>
+          <article class="glass card feature"><div class="symbol">₹</div><h3>Salary Insights</h3><p class="muted">Presents predicted salary ranges and readiness trends for career decisions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="shell">
+        <div class="section-head"><div><span class="eyebrow">Workflow</span><h2>From resume input to personalized career roadmap.</h2></div></div>
+        <div class="grid three steps">
+          <div class="glass card step"><h3>Upload</h3><p class="muted">Add resume highlights, career goals, or CSV-based candidate profiles.</p></div>
+          <div class="glass card step"><h3>Analyze</h3><p class="muted">Detect skill strengths, identify gaps, and calculate career readiness.</p></div>
+          <div class="glass card step"><h3>Grow</h3><p class="muted">Use career-path, learning, salary, and report insights to make better decisions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell grid three">
+        <article class="glass card"><h3>“The interface feels career-ready.”</h3><p class="muted">CogniPath makes skill gaps and next career steps easy to understand.</p><b>- Career Mentor</b></article>
+        <article class="glass card"><h3>“Fast enough for demo day.”</h3><p class="muted">The resume input flow, filters, charts, and reports work directly in the browser.</p><b>- Internship Mentor</b></article>
+        <article class="glass card"><h3>“Clear path to backend migration.”</h3><p class="muted">Local storage is isolated so FastAPI and SQLite can replace it cleanly.</p><b>- Software Architect</b></article>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="shell">
+        <div class="section-head"><div><span class="eyebrow">Demo Pricing</span><h2>Simple plans for project presentation.</h2></div></div>
+        <div class="grid three">
+          <div class="glass card"><h3>Starter</h3><h2>Free</h2><p class="muted">Local demo, resume inputs, CSV export.</p><a class="btn" href="register.html">Choose Starter</a></div>
+          <div class="glass card"><h3>Growth</h3><h2>₹999/mo</h2><p class="muted">Analytics, reports, admin panel, priority insights.</p><a class="btn primary" href="register.html">Choose Growth</a></div>
+          <div class="glass card"><h3>Enterprise</h3><h2>Custom</h2><p class="muted">FastAPI backend, SQLite/Postgres, SSO-ready architecture.</p><a class="btn" href="contact.html">Contact</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="shell">
+        <span class="eyebrow">FAQ</span><h2>Project questions answered.</h2>
+        <details open><summary>Is this ready for GitHub Pages or Netlify?</summary><p>Yes. It is a static HTML, CSS, and JavaScript app with no build step.</p></details>
+        <details><summary>Where is authentication stored?</summary><p>For the frontend demo, users and sessions are stored in localStorage. The code is organized for a future REST API migration.</p></details>
+        <details><summary>Does it include backend architecture?</summary><p>The README includes FastAPI, SQLite, and REST API migration guidance for the next phase.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell"><span>CogniPath - AI-Powered Career Intelligence Platform</span><span>Built for Infosys Springboard Virtual Internship</span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
